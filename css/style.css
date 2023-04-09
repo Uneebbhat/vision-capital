@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main: #23155b;
+  --primary: #8053ff;
+  --gray: #928cab;
+  --light-gray: #d4cdef;
+  --very-light-gray: #fbfaff;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.hero__heading {
+  font-size: 4rem;
+  color: var(--main);
+}
+
+h1 {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  height: 116px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.nav__links {
+  align-items: center;
+}
+
+.nav__ul {
+  margin-right: 36px;
+}
+
+ul li a {
+  padding: 0 24px;
+  color: var(--main);
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: var(--primary);
+}
+
+.join__btn button {
+  padding: 12px 24px;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  outline-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.join__btn button:hover {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background-color: transparent;
+}
+
+/* Hero Section */
+.hero__section-wrapper {
+  background: url("/img/hero-back-img.svg");
+  height: 81vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-light-gray);
+  text-align: center;
+}
+
+.hero__section-wrapper p {
+  color: var(--gray);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.hero__btn {
+  margin-top: 40px;
+}
+
+.hero__btn button {
+  border: none;
+  border-radius: 5px;
+  outline-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero__section-wrapper button.funding {
+  padding: 12px 48px;
+  background-color: var(--primary);
+  color: var(--white);
+  margin-right: 12px;
+  transition: all 0.3s ease;
+}
+
+.hero__section-wrapper button.funding:hover {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background-color: transparent;
+}
+
+.hero__section-wrapper button.invester {
+  padding: 12px 25px;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.hero__section-wrapper button.invester:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
