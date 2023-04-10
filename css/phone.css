@@ -1,0 +1,24 @@
+@media screen and (max-width: 850px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .ham {
+    display: block;
+    visibility: visible;
+  }
+
+  .hero__section-wrapper {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hero__btn {
+    flex-direction: column;
+  }
+}

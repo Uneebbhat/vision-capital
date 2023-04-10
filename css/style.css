@@ -32,7 +32,7 @@ li a {
 }
 
 .hero__heading {
-  font-size: 4rem;
+  font-size: clamp(3.5rem, 10vw + 1vw, 4rem);
   color: var(--main);
 }
 
@@ -50,12 +50,20 @@ button {
   cursor: pointer;
 }
 
+.ham {
+  display: none;
+  visibility: hidden;
+}
+
 /* Navbar */
 .navbar {
+  position: relative;
   height: 116px;
   justify-content: space-between;
   align-items: center;
   padding: 0 80px;
+  z-index: 9999;
+  background-color: var(--white);
 }
 
 .nav__links {
@@ -80,7 +88,7 @@ ul li a:hover {
   padding: 12px 24px;
   background-color: var(--primary);
   color: var(--white);
-  border: none;
+  border: 1px solid var(--primary);
   font-size: 16px;
   font-weight: 500;
   border-radius: 5px;
@@ -89,15 +97,41 @@ ul li a:hover {
 }
 
 .join__btn button:hover {
-  border: 1px solid var(--primary);
   color: var(--primary);
   background-color: transparent;
+}
+
+/* Moblie Navbar */
+.mobile__nav {
+  position: absolute;
+  width: 100%;
+  top: -280px;
+  /* top: 100px; */
+  background-color: #ddd1ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  transition: top 0.5s ease;
+}
+
+.mob__ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.mob__ul li {
+  margin-bottom: 20px;
 }
 
 /* Hero Section */
 .hero__section-wrapper {
   background: url("/img/hero-back-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 81vh;
+  padding: 0 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -109,39 +143,44 @@ ul li a:hover {
   color: var(--gray);
   font-size: 24px;
   font-weight: 400;
+  margin-top: 10px;
 }
 
 .hero__btn {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__btn button {
-  border: none;
+  border: 1px solid var(--primary);
   border-radius: 5px;
   outline-color: transparent;
   font-size: 18px;
   font-weight: 500;
+  margin: 5px 0;
 }
 
 .hero__section-wrapper button.funding {
   padding: 12px 48px;
   background-color: var(--primary);
   color: var(--white);
-  margin-right: 12px;
+  margin-right: 6px;
   transition: all 0.3s ease;
 }
 
 .hero__section-wrapper button.funding:hover {
-  border: 1px solid var(--primary);
   color: var(--primary);
   background-color: transparent;
 }
 
 .hero__section-wrapper button.invester {
-  padding: 12px 25px;
+  padding: 12px 30px;
   background-color: transparent;
   border: 1px solid var(--primary);
   color: var(--primary);
+  margin-left: 6px;
   transition: all 0.3s ease;
 }
 
