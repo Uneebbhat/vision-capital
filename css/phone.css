@@ -15,6 +15,29 @@
   .hero__section-wrapper {
     padding: 0 15px;
   }
+
+  .defipie__section-wrapper {
+    flex-direction: column;
+  }
+
+  .man__img {
+    margin-bottom: 50px;
+  }
+
+  .about__defipie {
+    padding: 0 15px;
+  }
+
+  .join__section-wrapper {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .fundraising__section-wrapper {
+    flex-direction: column;
+    padding: 0 15px;
+  }
 }
 
 @media screen and (max-width: 540px) {

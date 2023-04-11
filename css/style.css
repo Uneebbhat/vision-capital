@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  /* outline: 1px solid hotpink; */
 }
 
 :root {
@@ -187,4 +188,182 @@ ul li a:hover {
 .hero__section-wrapper button.invester:hover {
   background-color: var(--primary);
   color: var(--white);
+}
+
+/* Pipeline Section */
+.pipeline__section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  height: max-content;
+  width: 100%;
+}
+
+.pipeline__head {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  color: var(--main);
+}
+
+.pipeline__img img {
+  max-width: 50%;
+}
+
+.pipeline__img {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Fundraising Section */
+.fundraising__section-wrapper {
+  margin-top: 200px;
+  justify-content: space-between;
+  padding: 0 130px;
+}
+
+.fundraising__head h2 {
+  font-size: clamp(2rem, 10vw + 1vw, 3.25rem);
+  color: var(--main);
+}
+
+.fundraising__head h2 span {
+  color: var(--primary);
+}
+
+.about__fundraising {
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  margin-bottom: 12px;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+  background-color: var(--white);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  padding: 24px 32px;
+  border-radius: 5px;
+}
+
+.about__fundraising h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-right: 12px;
+}
+
+/* Defipie Section */
+.defipie__section-wrapper {
+  margin-top: 200px;
+  justify-content: space-between;
+}
+
+.man__img img {
+  max-width: 80%;
+}
+
+.about__defipie {
+  max-width: 500px;
+  margin-right: 80px;
+}
+
+.about__defipie h2 {
+  font-size: clamp(2rem, 10vw + 1vw, 3.25rem);
+}
+
+.first__span {
+  color: var(--primary);
+}
+
+.second__span {
+  color: var(--main);
+}
+
+.about__defipie p {
+  line-height: 27px;
+  color: var(--gray);
+  margin-top: 52px;
+}
+
+.para__one {
+  margin-bottom: 60px;
+}
+
+/* Partnership Section */
+.partnership__section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  height: max-content;
+  width: 100%;
+  text-align: center;
+}
+
+.partnership__head {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  color: var(--main);
+}
+
+.partnership__img img {
+  max-width: 50%;
+}
+
+.partnership__img {
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Join Section */
+.join__section-wrapper {
+  margin-top: 200px;
+  background: url("/img/contact-back-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--main);
+  color: var(--white);
+  padding: 180px 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.box {
+  width: 250px;
+  height: 100px;
+  margin: 0 25px;
+}
+
+.form input {
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.email {
+  margin-left: 50px;
 }
